@@ -7,10 +7,10 @@ import {
   Param,
   Delete,
 } from '@nestjs/common';
-import { CategoriesService } from './categories.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 import { ActiveUserId } from 'src/shared/decorators/ActiveUserId';
+import { CategoriesService } from './services/categories.service';
 
 @Controller('categories')
 export class CategoriesController {
